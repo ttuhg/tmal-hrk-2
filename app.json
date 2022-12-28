@@ -1,0 +1,8 @@
+{
+  "name": "Build tmal",
+  "description": "Deploy tmal to Heroku.",
+  "keywords": ["tmal"],
+  "website": "https://github.com/ttuhg/tmal-heroku-2",
+  "repository": "https://github.com/ttuhg/tmal-heroku-2",
+  "stack": "container"
+}

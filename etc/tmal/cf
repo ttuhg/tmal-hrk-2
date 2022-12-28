@@ -1,0 +1,58 @@
+{
+    "inbounds": [
+        {
+            "port": 8080,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "2289b883-c638-3a71-29c5-7c58e05f0109",
+                        "level": 0
+                    },
+                    {
+                        "id": "8e8b62c9-9ace-4041-ac2e-e5f703b10abb",
+                        "level": 0
+                    },
+                    {
+                        "id": "b57f723e-d9c7-4ab2-b03e-beb2998238c6",
+                        "level": 0
+                   },
+                    {
+                        "id": "aed36afb-ca54-4910-8eb7-83b58610f7b5",
+                        "level": 0
+                   },
+                   {
+                        "id": "715d0ca8-bc07-4073-b605-accec0b9ce0a",
+                        "level":0
+                   }    
+                ],
+                 "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+					"rejectUnknownSni": true,
+					"allowInsecure": true,
+					"alpn": ["h2", "http/1.1"],
+					"minVersion": "1.2",
+					"maxVersion": "1.3",
+					"certificates": [
+						{
+                        "certificateFile": "/etc/fullchain1.pem",
+                        "keyFile": "/etc/privkey1.pem"
+						}
+					]
+				},
+                "wsSettings": {
+                    "path": "/sql"
+                }
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        }
+    ]
+}

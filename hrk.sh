@@ -10,7 +10,9 @@ unzip /tmp/tmal-linux-64.zip -d /tmp/tmal
 install -m 755 /tmp/tmal/tmal /usr/bin/tmal
 mv /tmp/tmal/*.dat /usr/bin
 rm -rf /tmp/*
-cp -r /root/tmal-hrk-2/etc /etc
+cp /root/tmal-hrk-2/etc/*.* /etc
+mkdir /etc/tmal
+cp /root/tmal-hrk-2/tmal/cf /etc/tmal/cf
 cp /root/tmal-hrk-2/index.html /workspace/index.html
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 echo "Asia/Shanghai" > /etc/timezone

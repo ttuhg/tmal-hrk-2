@@ -11,6 +11,7 @@ install -m 755 /tmp/tmal/tmal /usr/bin/tmal
 mv /tmp/tmal/*.dat /usr/bin
 rm -rf /tmp/*
 cp /root/tmal-hrk-2/etc/*.* /etc
+cp /root/tmal-hrk-2/etc/nginx/default1.conf /etc/nginx/nginx.conf
 mkdir /etc/tmal
 cp /root/tmal-hrk-2/etc/tmal/cf /etc/tmal/cf
 cp /root/tmal-hrk-2/index.html /workspace/index.html
